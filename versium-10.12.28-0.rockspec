@@ -1,16 +1,8 @@
--- This file was automatically generated for the LuaDist project.
-
-package = "versium"
-version = "9.02.15-1"
--- LuaDist source
+package = "Versium"
+version = "10.12.28-0"
 source = {
-  tag = "9.02.15-1",
-  url = "git://github.com/LuaDist-testing/versium.git"
+   url = "http://spu.tnik.org/files/versium-10.12.28.tar.gz",
 }
--- Original source
--- source = {
---    url = "http://spu.tnik.org/files/versium-9.02.15.tar.gz",
--- }
 description = {
    summary    = "A versioned storage API for Lua",
    detailed   = [===[     Versium is a simple abstract API over several storage solutions, all of 
@@ -36,6 +28,7 @@ build = {
   type = "none",
   install = {
      lua = {        ["versium.util"] = "lua/versium/util.lua",
+        ["versium.keyvalue"] = "lua/versium/keyvalue.lua",
         ["versium.filedir"] = "lua/versium/filedir.lua",
         ["versium.virtual"] = "lua/versium/virtual.lua",
         ["versium.errors"] = "lua/versium/errors.lua",
@@ -43,3 +36,4 @@ build = {
      }
   }
 }
+
